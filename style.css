@@ -351,11 +351,11 @@ FEATURES ↓
 }
 
 #features .row__narrow p {
-    color: #1a202caa;
-    font-weight: 500;
     font-size: 16px;
-    line-height: 1.6;
-    max-width: 600px;
+    line-height: 2;
+    color: #7c8ba1;
+    font-weight: 500;
+    max-width: 55%;
 }
 
 .Service-Card__wrapper {
@@ -563,6 +563,119 @@ VALUES ↓
     font-weight: 1000;
     font-size: 50px;
     margin-bottom: 10px;
+}
+
+#values .row p {
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #7c8ba1cc;
+    margin-bottom: 50px;
+    max-width: 100%
+}
+
+#values .values-container {
+    display: flex;
+    flex-direction: row;
+    margin: 25px;
+}
+
+#values .values-container h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+#values .values-container p {
+    font-weight: 400;
+    max-width: 85%;
+}
+
+#values .row a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 160px;
+    height: 56px;
+
+    background: rgb(100, 21, 255);
+    border-radius: 100px;
+
+    color: #e5e7eb;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    font-size: 14px;
+
+    transition: transform 300ms ease, background 300ms ease, box-shadow 300ms ease;
+}
+
+#values .row a:hover {
+    background: #5011cc;
+    box-shadow: 0 8px 24px rgba(100, 21, 255, 0.35);
+    transform: translateY(-4px) scale(1.04);
+}
+
+#values .card-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    align-items: first baseline;
+}
+
+#values .icon-circle {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+}
+
+#values .icon-circle i,
+#values .icon-circle svg {
+    color: #fff;
+    fill: #fff;
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+#values .icon-circle--red {
+    background-color: #f56565;
+}
+
+#values .icon-circle--green {
+    background-color: #48bb78;
+}
+
+#values .icon-circle {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+}
+
+#values .icon-circle--red {
+    background-color: #f56565;
+}
+
+#values .icon-circle--green {
+    background-color: #48bb78;
+}
+
+#values .icon-circle i,
+#values .icon-circle svg,
+#values .icon-circle svg path {
+    fill: #00000066 !important;
 }
 
 /*
@@ -899,11 +1012,71 @@ TESTIMONIALS ↓
 }
 
 #testimonials .row p {
+    margin-top: 25px;
     color: #7c8ba1;
     font-weight: 600;
     letter-spacing: 0.2vh;
 }
 
+#testimonials .rating-container {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+}
+
+#testimonials .rating-container svg,
+#testimonials .rating-container svg path,
+#testimonials .rating-container i {
+    color: goldenrod;
+    fill: goldenrod;
+}
+
+#testimonials .user-container {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#testimonials .user-container img {
+    width: 15%;
+    border-radius: 100px;
+}
+
+#testimonials .user-contaier h2 {
+    margin-top: 25px;
+}
+.arrow-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    background: #e5e7eb;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;    
+
+}
+
+.arrow-btn:first-of-type{
+    margin-left: 100px;
+}
+
+/* Font Awesome icon */
+.arrow-btn i {
+    font-size: 10px;
+    color: #6415ff;
+}
+
+/* If Font Awesome turns it into SVG */
+.arrow-btn svg {
+    width: 28px;
+    height: 28px;
+    color: #6415ff;
+    fill: #6415ff;
+}
 /* 
 
 START / CALL TO ACTION ↓
